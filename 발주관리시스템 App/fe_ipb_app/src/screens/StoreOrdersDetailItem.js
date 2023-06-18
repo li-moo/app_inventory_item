@@ -19,12 +19,8 @@ function StoreOrdersDetailItem(props) {
         qnt: tarQnt,
         delivery_id: 1,
       },
-    }).catch(function (error) {
-      if (error.response) {
-        console.log(error.response.data);
-        console.log(error.response.status);
-        console.log(error.response.headers);
-      }
+    }).catch((err) => {
+
     });
   };
 
@@ -43,8 +39,8 @@ function StoreOrdersDetailItem(props) {
       .then(() => {
         props.onDeleteOrder();
       })
-      .catch(function (error) {
-        console.log("error-> StoreOrdersDetailItem:", error);
+      .catch((err) => {
+
       });
   };
 

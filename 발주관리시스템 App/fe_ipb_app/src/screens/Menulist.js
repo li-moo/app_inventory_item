@@ -19,7 +19,9 @@ const Menulist = () => {
       .then((res) => {
         setTableDataList(res.data);
       })
-      .catch((err) => console.log("orderproductlist/err", err));
+      .catch((err) => {
+
+      });
   }, []);
 
   const handleDelete = (index) => {

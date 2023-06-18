@@ -32,14 +32,16 @@ function Cart() {
     axios
       .get(url_be)
       .then((res) => {
-        console.log('storeExp->res.data::', res.data);
+
         const addData = res.data.map((item) => ({
           ...item,
           addData: subtractDates(todayDate, item.exp),
         }));
         setStoreProductData(addData);
       })
-      .catch((err) => console.log('storeexp/err', err));
+      .catch((err) => {
+
+      });
   };
 
   const subtractDates = (date1, date2) => {
@@ -84,15 +86,14 @@ function Cart() {
   const disposeBtn = (id) => {
     const url_be_disposeBtn = 'http://43.202.9.215:8080/storeproduct/qntzero';
 
-    console.log('폐기버튼안>id:', id);
-
     axios
       .put(url_be_disposeBtn, { id })
       .then((res) => {
-        console.log('폐기버튼안>res.data:', res.data);
         setRefreshExpBtn(!refreshExpBtn);
       })
-      .catch((err) => console.log('storeexp/err', err));
+      .catch((err) => {
+
+      });
   };
 
   const tableHead = ['상품 번호', '상품 이름', '유통기한', '재고', '가격', '폐기처'];
