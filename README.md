@@ -9,11 +9,11 @@
 	<h3>실행방법</h3>
 	<div>
 		<p>1) yarn 버전 확인 </p>
-		<p><img src="https://img.shields.io/badge/node.js-E34F26?style=flat&logo=node.js&logoColor=white" />: v16.18.0</p>
+		<p><img src="https://img.shields.io/badge/node.js-E34F26?style=flat&logo=node.js&logoColor=white" />: 1.22.19</p>
 	</div>
 	  <div class="callout">
 	    <p>2) package-json 설치</p>
-	    <p>npm install</p>
+	    <p>yarn install</p>
 	  </div>
 	<div>
 		<p>3) 서버 git 주소</p>
@@ -39,6 +39,7 @@
 	<p><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" /></p>
 	<p><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white" /></p>
 	<p><img src="https://img.shields.io/badge/React-0769AD?style=flat&logo=React&logoColor=white" />: 17.0.2</p>
+		<p><img src="https://img.shields.io/badge/React-Native-0769AD?style=flat&logo=React&logoColor=white" />: 17.0.2</p>
 <!-- 	<img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jQuery&logoColor=white" /> -->
 	<br>
 <!-- 	<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=Spring&logoColor=white" />
