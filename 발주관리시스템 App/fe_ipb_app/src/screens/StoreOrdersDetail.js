@@ -139,9 +139,7 @@ function StoreOrdersDetail(props) {
         setShowDeleteModal(false);
       })
       .catch(function (error) {
-        .catch((err) => {
-
-        });
+ 
       });
   };
 
