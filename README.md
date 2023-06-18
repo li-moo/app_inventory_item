@@ -40,7 +40,7 @@
 <div align="center">
 <!-- 	<img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Conda-Forge&logoColor=white" /> -->
 	<p><img src="https://img.shields.io/badge/React-0769AD?style=flat&logo=React&logoColor=white" />: 18.2.0</p>
-		<p><img src="https://img.shields.io/badge/React%-Native-0769AD?style=flat&logo=React&logoColor=white" />: 17.0.2</p>
+		<p><img src="https://img.shields.io/badge/React-Native-0769AD?style=flat&logo=React&logoColor=white" />: 17.0.2</p>
 <!-- 	<img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jQuery&logoColor=white" /> -->
 	<br>
 <!-- 	<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=Spring&logoColor=white" />
