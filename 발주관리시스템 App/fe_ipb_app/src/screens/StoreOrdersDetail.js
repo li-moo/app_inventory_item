@@ -45,7 +45,9 @@ function StoreOrdersDetail(props) {
           setStoreOrdersDetailListData([]);
         }
       })
-      .catch((err) => console.log('storeOrdersDetail/err', err));
+      .catch((err) => {
+
+      });
   };
 
   const updateQnt = (putItemId, putQuantity) => {
@@ -53,10 +55,6 @@ function StoreOrdersDetail(props) {
     // console.log("updatedOrders", updatedOrders);
     // console.log("updateQnt안itemId", itemId);
     // console.log("updateQnt안quantity", quantity);
-    console.log("ccccfilteredOrders", filteredOrders);
-
-    console.log("updateQnt안putItemId", putItemId);
-    console.log("updateQnt안putQuantity", putQuantity);
 
     fetch(url_be_updateQnt, {
       method: 'PUT',
@@ -84,10 +82,10 @@ function StoreOrdersDetail(props) {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
+
       })
       .catch((error) => {
-        console.log(error);
+
       });
   };
   
@@ -112,7 +110,7 @@ function StoreOrdersDetail(props) {
   const handleDeleteOrder = (id) => {
     const orderToDelete = filteredOrders.find((item) => item.id === id);
     if (orderToDelete.orders_status === '배송완료') {
-      console.log('배송완료된 주문은 삭제할 수 없습니다.');
+      // console.log('배송완료된 주문은 삭제할 수 없습니다.');
       return;
     }
 
@@ -141,7 +139,9 @@ function StoreOrdersDetail(props) {
         setShowDeleteModal(false);
       })
       .catch(function (error) {
-        console.log('error-> StoreOrdersDetail:', error);
+        .catch((err) => {
+
+        });
       });
   };
 
@@ -154,8 +154,7 @@ function StoreOrdersDetail(props) {
   };
 
   const handleQuantityChange = (itemId, quantity) => {
-    console.log("quantity", quantity)
-    console.log("itemId", itemId)
+
     const updatedOrders = filteredOrders.map((item) => {
       if (item.id === itemId) {
         return {
@@ -173,8 +172,6 @@ function StoreOrdersDetail(props) {
 
   };
 
-
-  console.log("dddfilteredOrders", filteredOrders)
 
   return (
 

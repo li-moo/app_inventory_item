@@ -16,7 +16,6 @@ function OrdersList({ navigation: { navigate } }) {
 
   const handleRowClick = (id, ordersDate) => {
     setSelectedId(id);
-    console.log("------> ordersDate : ", ordersDate);
     navigate("StoreOrdersDetail", { propsData: { "storeId": id, "orderDate": ordersDate } });
   };
 
@@ -31,12 +30,13 @@ function OrdersList({ navigation: { navigate } }) {
       method: 'get'
     })
       .then((res) => {
-        console.log("> fetchStoreOrdersDetailData > fetch 받은 데이터 res.data>>>", res.data);
         // Sorting the data by orders_date in descending order
         const sortedData = res.data.sort((a, b) => new Date(b.orders_date) - new Date(a.orders_date));
         setStoreOrdersDetailData(sortedData);
       })
-      .catch((err) => console.log("storeexp/err", err))
+      .catch((err) => {
+
+      });
   }
 
   const navigation = useNavigation();

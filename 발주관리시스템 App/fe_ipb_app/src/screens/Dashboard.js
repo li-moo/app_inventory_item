@@ -46,14 +46,14 @@ const DashBoard = () => {
         if (granted === PermissionsAndroid.RESULTS.GRANTED) {
           navigation.navigate('QR코드');
         } else {
-          console.log('카메라 권한이 거부되었습니다.');
+          // console.log('카메라 권한이 거부되었습니다.');
         }
       } else if (Platform.OS === 'ios') {
         const status = await Permissions.request('camera');
         if (status === 'authorized') {
           navigation.navigate('QR코드');
         } else {
-          console.log('카메라 권한이 거부되었습니다.');
+          // console.log('카메라 권한이 거부되었습니다.');
         }
       }
     } catch (err) {

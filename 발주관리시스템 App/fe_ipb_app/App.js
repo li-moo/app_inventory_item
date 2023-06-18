@@ -1,9 +1,9 @@
-import React from 'react';
-import { StatusBar } from 'react-native';
-import { Provider } from 'react-native-paper';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { theme } from './src/core/theme';
+import React from 'react'
+import { StatusBar } from 'react-native'
+import { Provider } from 'react-native-paper'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import { theme } from './src/core/theme'
 import {
   StartScreen,
   LoginScreen,
@@ -15,10 +15,10 @@ import {
   Orderlist,
   Weather,
   Orderslist,
-} from './src/screens';
-import { RecoilRoot } from 'recoil';
-import StoreOrdersDetail from './src/screens/StoreOrdersDetail';
-import Cart from './src/screens/cart';
+} from './src/screens'
+import { RecoilRoot } from 'recoil'
+import StoreOrdersDetail from './src/screens/StoreOrdersDetail'
+import Cart from './src/screens/cart'
 
 
 StatusBar.setBarStyle('light-content');

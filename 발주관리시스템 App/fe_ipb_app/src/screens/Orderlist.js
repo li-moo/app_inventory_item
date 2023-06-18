@@ -19,11 +19,11 @@ function OrderList() {
   const fetchData = () => {
     axios(url_be, { method: 'get' })
       .then((res) => {
-        console.log("res:", res);
-        console.log("orderProdutList=>res.data:", res.data);
         setProductData(res.data);
       })
-      .catch((err) => console.log("orderproductlist/err", err));
+      .catch((err) => {
+
+      });
   };
 
   const handleAddCart = (id) => {

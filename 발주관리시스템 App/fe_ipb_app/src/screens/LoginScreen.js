@@ -42,7 +42,7 @@ export default function LoginScreen({ navigation }) {
       })
       .then(function (response) {
         const staff = response.data;
-        console.log(staff); // staff 정보를 콘솔에 출력
+
         if (staff !== null && staff !== '') {
           navigation.reset({
             index: 0,
