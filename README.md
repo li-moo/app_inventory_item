@@ -73,7 +73,7 @@
 | last 2 versions | last 2 versions |
 </div> -->
 
-<div> 🎁 package-json 🎁 </div>
+<div align=center> 🎁 package-json 🎁 </div>
 ```json
 {
   "main": "node_modules/expo/AppEntry.js",
